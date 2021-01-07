@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{ --sliderWidth:1000px; --sliderheight:600px; }
+        .slider{width:var(--sliderWidth);height:var(--sliderheight);border:1px solid red;display:none;}
+        img{width:var(--sliderWidth);height:var(--sliderheight);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider"><img src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg" alt="Image1"></div>
+        <div class="slider"><img src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="Image2"></div>
+        <div class="slider"><img src="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg" alt="Image3"></div>
+        <div class="slider"><img src="https://www.gizbot.com/images/2020-09/realme-7_159921061900.jpg" alt="Image4"></div>
+        <div class="slider"><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGljfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" alt="Image5"></div>
+    </div>
+    <script type="text/javascript">
+    var i = 0;
+    var image=document.querySelectorAll(".slider");
+    var counter = image.length;
+    function slide(){
+        if(i==counter){i=0;}
+        for(var j=0;j<counter;j++){
+            image[j].style.display = "none";
+            console.log("j = "+j);
+        }
+        image[i].style.display = "block";
+        i++;
+    }
+    setInterval(slide,2000);
+    </script>
+</body>
+</html>
