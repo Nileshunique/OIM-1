@@ -27,6 +27,7 @@ body {background-color: #59b9c6;overflow: auto;}
 <a href="LOGIN/teacherlogin.jsp"><div id ="teacher"><img id="home" src="Admin.png">Teacher Login</div> </a>
 <a href="LOGIN/studentlogin.jsp"><div id ="student"><img id="home" src="Teacher.png">Student Login</div></div></a>
 <div id ="photos"><img id="set" src="schoolphoto.jpg"></div>
+<h1>Nilesh created this to the nitins project.</h1>
 <div id ="footer"> Created By NILESH, NITIN , Course MCA , Enrolment No. 157798950, 159612460 </div>
 </body>
 </html>
